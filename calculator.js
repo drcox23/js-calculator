@@ -50,9 +50,14 @@ var calculatorModule = (function () {
     }
 
     function saveMemory(num2){
-        memory = num2;
+        memory = getTotal();
         return memory;
-        
+
+    }
+
+    function clearMemory(){
+        memory = 0;
+        return memory;
     }
 
     return {
@@ -63,7 +68,8 @@ var calculatorModule = (function () {
         multiply: multiply,
         divide: divide,
         recallMemory: recallMemory,
-        saveMemory: saveMemory
+        saveMemory: saveMemory,
+        clearMemory: clearMemory
     }
        
 
