@@ -7,6 +7,70 @@
  */
 
 
+var calculatorModule = (function () {
+    var memory = 0;
+    var total = 0;
+
+    
+    function load(num) {
+        total = num;
+        return total;
+
+    }
+    
+    function getTotal(){
+        return total;
+
+    }
+
+    function add(num){         
+        total = num + getTotal();
+        return total
+        
+    }
+
+    function subtract(num){
+        total = getTotal() - num;
+        return total;
+
+    }
+
+    function multiply(num){
+        total = num * getTotal();
+        return total;
+    }
+
+    function divide(num){
+        total = getTotal()/num;
+        return total;
+    }
+
+    function recallMemory(){
+        return memory;
+    }
+
+    function saveMemory(num2){
+        memory = num2;
+        return memory;
+        
+    }
+
+    return {
+        load: load,
+        getTotal: getTotal,
+        add: add,
+        subtract: subtract,
+        multiply: multiply,
+        divide: divide,
+        recallMemory: recallMemory,
+        saveMemory: saveMemory
+    }
+       
+
+});
+
+
+
   /**
    * sets the `total` to the number passed in
    * @param  { Number } x
