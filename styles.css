@@ -1,0 +1,106 @@
+body {
+    background-color: aquamarine;
+}
+
+#container {
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    background-color: azure;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    
+}
+
+#screen {
+   height: 50px;
+   font-size: 45px;
+   background-color: blanchedalmond;
+   justify-content: center; 
+   justify-items: end;
+   border: 2px solid black;
+   width: 90%;
+   margin: 10px auto;
+
+}
+
+#top {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+
+}
+
+
+.functionButtons {
+    flex: 1 1 123px;
+    background-color: red;
+    text-align: center;
+    width: 50px;
+    height: 40px; 
+    line-height: 40px;
+    margin: 10px; 
+    border: 1px solid black;
+
+}
+
+#row2 {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+
+}
+
+#row3 {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+
+}
+#row4 {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+
+}
+
+#row5 {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+
+}
+
+
+.numbers {
+   flex: 1 1 50px;
+   flex-direction: row;
+   background-color: blueviolet;
+   text-align: center;
+   width: 50px;
+   height: 40px; 
+   line-height: 40px;
+   margin: 10px;
+   
+}
+
+
+
+#operatorStuff {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style-type: none;
+}
+
+.operatorButton {
+    flex: 1 1 50px;
+    width: 50px;
+    height: 40px;
+    background-color: green;
+    line-height: 40px;
+    margin: 10px; 
+    text-align: center;
+
+}
